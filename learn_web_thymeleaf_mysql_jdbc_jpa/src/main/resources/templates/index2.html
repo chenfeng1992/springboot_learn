@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <ul th:each="p,i:${list}">
+        <li><span th:text="${i.index}"></span>:<span th:text="${p.id}"></span></li>
+        <li><span th:text="${i.index}"></span>:<span th:text="${p.name}"></span></li>
+        <li><span th:text="${i.index}"></span>:<span th:text="${p.age}"></span></li>
+    </ul>
+</div>
+</body>
+</html>
